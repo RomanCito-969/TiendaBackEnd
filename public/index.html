@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roman Solanas Barrera">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tienda BackEnd</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <h1>Tienda Backend</h1>
+    </header>
+    <main>
+        <p><small>Frontend en <a href="https://tiendafrontend.now.sh/">https://tiendafrontend.now.sh</a></small></p>
+
+        <p><b>API RESTfull</b></p>
+
+        <section class="bloque">
+            <h4>ARTÍCULOS</h4>
+            <div class="resumen metodo get">
+                <span class="metodo-verbo http-get">GET</span>
+                <span class="metodo-ruta">/api/articulos</span>
+                <span class="metodo-descripcion">Obtener todos los artículos.</span>
+            </div>
+            <div class="resumen metodo post">
+                <span class="metodo-verbo http-post">POST</span>
+                <span class="metodo-ruta">/api/articulos</span>
+                <span class="metodo-descripcion">Añadir un artículo.</span>
+            </div>
+            <div class="resumen metodo get">
+                <span class="metodo-verbo http-get">GET</span>
+                <span class="metodo-ruta">/api/articulos/{id}</span>
+                <span class="metodo-descripcion">Obtener un artículo.</span>
+            </div>
+            <div class="resumen metodo update">
+                <span class="metodo-verbo http-update">UPDATE</span>
+                <span class="metodo-ruta">/api/articulos/{id}</span>
+                <span class="metodo-descripcion">Modificar un artículo.</span>
+            </div>
+            <div class="resumen metodo delete">
+                <span class="metodo-verbo http-delete">DELETE</span>
+                <span class="metodo-ruta">/api/articulos/{id}</span>
+                <span class="metodo-descripcion">Eliminar un artículo.</span>
+            </div>
+        </section>
+
+        <section class="bloque">
+            <h4>CLIENTES</h4>
+            <div class="resumen metodo get">
+                <span class="metodo-verbo http-get">GET</span>
+                <span class="metodo-ruta">/api/clientes</span>
+                <span class="metodo-descripcion">Obtener todos los clientes.</span>
+            </div>
+            <div class="resumen metodo post">
+                <span class="metodo-verbo http-post">POST</span>
+                <span class="metodo-ruta">/api/clientes</span>
+                <span class="metodo-descripcion">Añadir un cliente.</span>
+            </div>
+            <div class="resumen metodo get">
+                <span class="metodo-verbo http-get">GET</span>
+                <span class="metodo-ruta">/api/clientes/{id}</span>
+                <span class="metodo-descripcion">Obtener un cliente.</span>
+            </div>
+            <div class="resumen metodo update">
+                <span class="metodo-verbo http-update">UPDATE</span>
+                <span class="metodo-ruta">/api/clientes/{id}</span>
+                <span class="metodo-descripcion">Modificar un cliente.</span>
+            </div>
+            <div class="resumen metodo delete">
+                <span class="metodo-verbo http-delete">DELETE</span>
+                <span class="metodo-ruta">/api/clientes/{id}</span>
+                <span class="metodo-descripcion">Eliminar un cliente.</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <small>
+                <b>Código fuente en
+                    <a href=""></a>
+                </b>
+            </small>
+        </p>
+    </footer>
+</body>
+
+</html>
