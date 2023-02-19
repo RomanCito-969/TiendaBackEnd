@@ -36,7 +36,7 @@ exports.updateCliente = (req, res) =>
 
 
 exports.createCliente = (req, res) =>
-    new Cliente({ nombre: req.body.nombre, apellidos: req.body.apellidos })
+    new Cliente({_id: req.body._id, nombre: req.body.nombre, apellidos: req.body.apellidos })
     .save((err, data) => {
         if (err) res.json({ error: err });
         else     res.json(data);
@@ -44,7 +44,7 @@ exports.createCliente = (req, res) =>
 
 
 
-// ------ ARTÍCULOS
+// ------ Arma
 
 exports.readArmas = (req, res) =>
     Arma.find({}, (err, data) => {
@@ -80,7 +80,7 @@ exports.updateArma = (req, res) =>
 
 
 exports.createArma = (req, res) =>
-    new Arma({ nombre: req.body.nombre, precio: req.body.precio })
+    new Arma({_id: req.body._id, nombre: req.body.nombre, precio: req.body.precio })
     .save((err, data) => {
         if (err) res.json({ error: err });
         else     res.json(data);
